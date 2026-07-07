@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Recovered · Sappho grew in our lifetime · LESBOS · ROOT0</title>
+<meta name="description" content="Sappho was fixed for ~1500 years — then in 2004 (Cologne, the Old Age / Tithonus poem) and 2014 (Obbink, the Brothers & Kypris poems) new papyri substantially grew her. A live 2D-canvas timeline: scrub the years and watch fragments surface. Honest: the 2014 finds are genuine Sappho but arrived through a disgraced, likely-looted provenance (Obbink arrested 2020). LESBOS / ROOT0.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Spectral:ital,wght@0,300;0,400;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --sea:#170d20; --lead:#9a98a6; --parch:#e9e2d2; --gold:#d9a441; --verd:#73b3a3;
+    --murex:#c2557f; --murex-d:#9a3d68; --ink:#e9e2d2; --dim:#8f7f92; --warn:#e07a54; --line:rgba(194,85,127,.18); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%;background:var(--sea);color:var(--ink);font-family:Spectral,Georgia,serif;line-height:1.66;
+    background-image:radial-gradient(ellipse 62% 44% at 18% 4%,rgba(194,85,127,.10),transparent 60%),radial-gradient(ellipse 50% 40% at 88% 96%,rgba(115,179,163,.06),transparent 60%)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px 84px;position:relative}
+  .top{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;padding:12px 0;border-bottom:1px solid var(--line);color:var(--murex)}
+  .top a{color:var(--murex);text-decoration:none} .top a:hover{color:var(--gold)}
+  header{padding:40px 0 6px}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--murex)}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,7vw,62px);color:var(--parch);line-height:1.02;margin:10px 0 6px;letter-spacing:.5px}
+  .lede{font-size:clamp(16px,2.3vw,20px);font-weight:300;max-width:66ch;color:var(--ink);margin-top:10px}
+  .lede b{color:var(--gold);font-weight:400} .lede .m{color:var(--murex)}
+  section{margin:38px 0 0}
+  h2{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--murex);margin:0 0 12px;border-top:1px solid var(--line);padding-top:16px}
+  canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:3px;background:#0c0710;touch-action:none;cursor:ew-resize}
+  .controls{display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin:14px 0 0;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim)}
+  .controls label{display:flex;flex-direction:column;gap:4px;min-width:280px;flex:1}
+  .controls .val{color:var(--gold)}
+  input[type=range]{accent-color:var(--murex);width:100%}
+  .chips{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:16px;padding:5px 12px;cursor:pointer;transition:.14s}
+  .chip:hover{border-color:var(--murex);color:var(--murex)} .chip.on{border-color:var(--gold);color:var(--gold);background:rgba(217,164,65,.06)}
+  .poem{margin-top:14px;padding:16px 18px;border:1px solid var(--line);border-radius:3px;background:rgba(194,85,127,.03)}
+  .poem .yr{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.06em;color:var(--verd)}
+  .poem .yr.flag{color:var(--warn)}
+  .poem .en{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--parch);line-height:1.55;margin:8px 0}
+  .poem .prov{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--dim);line-height:1.7;margin-top:8px}
+  .poem .prov b{color:var(--ink)} .poem .prov .w{color:var(--warn)}
+  .prose{font-size:15px;color:var(--ink);max-width:70ch} .prose b{color:var(--gold)} .prose .m{color:var(--murex)} .prose .w{color:var(--warn)}
+  .honest{border:1px solid var(--line);border-radius:3px;padding:15px 17px;margin-top:8px;background:rgba(224,122,84,.04)}
+  .honest h3{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--warn);margin:0 0 8px}
+  .honest p{font-size:13.5px;color:var(--dim);margin:6px 0} .honest b{color:var(--ink)}
+  footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--dim);line-height:1.9}
+  footer a{color:var(--murex)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="https://davidwise01.github.io/ud0/">◄ UD0</a> · I THINK I'M IN LESBIANS WITH YOU · <a href="https://davidwise01.github.io/the-tenth-muse/">the tenth muse ↗</a></div>
+  <header>
+    <div class="eyebrow">Sappho grew — in our own lifetime</div>
+    <h1>The Recovered</h1>
+    <p class="lede">A dead poet is supposed to be finished. Sappho was — for about <b>fifteen centuries</b> she was fixed, a name and a heap of scraps. Then, twice, the ground gave her back. In <b>2004</b> a papyrus in Cologne restored most of a poem on <b>growing old</b>; in <b>2014</b> two more poems surfaced — one naming her <b>brothers</b>, connecting the verse to a life. Scrub the years below and watch the fragments rise. But one of these recoveries came to us through a <span class="w">crime</span>, and this domain will not pretend otherwise.</p>
+  </header>
+
+  <section>
+    <h2>the timeline · drag the year, watch her surface</h2>
+    <canvas id="cv" width="820" height="360" aria-label="a timeline from 1900 to now; papyrus fragments surface at 2004 and 2014 as Sappho's text grows"></canvas>
+    <div class="controls">
+      <label>year — <span class="val" id="yVal">2024</span><input type="range" id="yRange" min="1890" max="2024" step="1" value="2024"></label>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="poem" id="poem"></div>
+  </section>
+
+  <section>
+    <h2>the crime in the recovery</h2>
+    <p class="prose">The <b>2004</b> find is clean: fragments of the Old Age poem were read out of <b>mummy cartonnage</b> — waste papyrus recycled to wrap the dead — with an ordinary archaeological history. The <b>2014</b> find is not. The Brothers and Kypris poems were published by the Oxford papyrologist <b>Dirk Obbink</b> with a tidy provenance story — a private collection, an old auction lot — that <span class="w">did not survive scrutiny</span>. The fragments are now entangled in the theft of papyri from the <b>Egypt Exploration Society's Oxyrhynchus collection</b>; Obbink was <b>arrested in 2020</b> on suspicion of selling stolen pieces, and the paper trail he offered appears to have been fabricated. Almost every scholar accepts the <i>text</i> as genuinely Sappho — the Greek, the metre, the dialect all hold. But how it reached us may be <b>looting</b>, and a poem about a brother steering his ship home safe reaching us in the hold of a smuggler is a bitterness the poem didn't ask for. To recover a voice is a gift; to recover it through a wrong is a debt. This domain keeps the poem <i>and</i> keeps the asterisk.</p>
+    <div class="honest">
+      <h3>honest note</h3>
+      <p><b>Real:</b> the 2004 Cologne (P.Köln) Old Age poem and the 2014 Obbink Brothers &amp; Kypris poems are documented discoveries; the texts are widely accepted as genuine Sappho; the Obbink provenance scandal, the EES/Oxyrhynchus thefts, and his 2020 arrest are a matter of public record.</p>
+      <p><b>Flagged:</b> the English here is my own plain gloss of the sense, never a copyrighted translation; some readings are still contested at the edges (marked […]). The provenance of the 2014 fragments remains <span class="w">disputed and disgraced</span> — the ethical stain is real and is not softened here. To render both the gift and the debt is the honest work.</p>
+    </div>
+  </section>
+
+  <footer>
+    THE RECOVERED · LESBOS ("I think I'm in lesbians with you") · David Lee Wise / ROOT0, with AVAN · CC-BY-ND-4.0<br>
+    <a href="https://davidwise01.github.io/ud0/">← the biosphere</a> · <a href="https://davidwise01.github.io/the-fragments/">the fragments</a> · <a href="https://davidwise01.github.io/the-tenth-muse/">the tenth muse</a>
+  </footer>
+</div>
+<script>
+"use strict";
+(function(){
+  var cv=document.getElementById("cv"), ctx=cv.getContext("2d");
+  var W=cv.width, H=cv.height, year=2024, cur=0, t=0;
+  var Y0=1890, Y1=2024, AX=H-42;
+  var FINDS=[
+    {yr:1897, base:true, label:"Oxyrhynchus digs begin", lines:0},
+    {yr:2004, k:"oldage", clean:true, label:"Cologne · the Old Age poem"},
+    {yr:2014, k:"brothers", clean:false, label:"Obbink · the Brothers + Kypris poems"}
+  ];
+  var POEMS={
+    oldage:{name:"fr. 58 · the Old Age / Tithonus poem", yr:2004, clean:true,
+      en:"my knees no longer carry me, that once were quick to dance like fawns; my hair has gone white from black. but nothing can be done — no one is ageless. they say rosy-armed Dawn, for love, once carried Tithonus off to the world's end, beautiful and young — and even him, in time, grey age caught, though his wife cannot die.",
+      prov:"Cologne papyrus (P.Köln 21351+), 2004 — read from mummy cartonnage. <b>Clean provenance.</b> The most complete new Sappho: a poem on aging, and the myth of the man given endless life but not endless youth."},
+    brothers:{name:"the Brothers Poem", yr:2014, clean:false,
+      en:"— but you keep chattering that Charaxos will come, his ship full. that, I think, is for Zeus and the gods to know; you must not dwell on it. send me instead, and bid me pray hard to queen Hera that he steer his ship home safe and find us sound. the rest, let us leave to the gods. and if Larichos would only lift his head and become a man, we'd be freed from so much heaviness of heart.",
+      prov:"Obbink papyrus, published 2014 — <span class='w'>PROVENANCE DISGRACED.</span> Names her brothers Charaxos (a merchant, at sea) and Larichos, known from Herodotus. Text accepted as Sappho; acquisition tied to the EES Oxyrhynchus thefts (Obbink arrested 2020)."},
+    kypris:{name:"the Kypris Poem", yr:2014, clean:false,
+      en:"how can it not wound a person over and over, Kypris — Aphrodite — whomever one truly longs to love, and wishes to call back the wanting… […]",
+      prov:"Obbink papyrus, 2014 — <span class='w'>same disgraced provenance</span> as the Brothers Poem. Fragmentary; a cry to Aphrodite on the recurring pain of desire."}
+  };
+  var CHIPS=["oldage","brothers","kypris"];
+
+  function yx(y){ return 40+(y-Y0)/(Y1-Y0)*(W-70); }
+  function amountAt(y){ var a=8; if(y>=2004)a+=28; if(y>=2014)a+=22; return a; } // "% of a poem-equivalent" illustrative
+
+  function draw(){
+    t+=0.03;
+    ctx.clearRect(0,0,W,H); ctx.fillStyle="#0c0710"; ctx.fillRect(0,0,W,H);
+    // "the lost centuries" dark wash on the far left edge label
+    ctx.fillStyle="rgba(233,226,210,.5)"; ctx.font="11px 'IBM Plex Mono',monospace";
+    ctx.fillText("← fixed since antiquity", 42, 20);
+    // growth area (how much we have) as a filled step up to the scrubbed year
+    ctx.beginPath(); ctx.moveTo(yx(Y0), AX);
+    for(var y=Y0;y<=year;y++){ ctx.lineTo(yx(y), AX-amountAt(y)*2.4); }
+    ctx.lineTo(yx(year), AX); ctx.closePath();
+    var g=ctx.createLinearGradient(0,AX-160,0,AX); g.addColorStop(0,"rgba(194,85,127,.28)"); g.addColorStop(1,"rgba(194,85,127,.05)");
+    ctx.fillStyle=g; ctx.fill();
+    ctx.strokeStyle="rgba(217,164,65,.6)"; ctx.lineWidth=1.5; ctx.beginPath();
+    for(y=Y0;y<=Y1;y++){ var yy=AX-amountAt(y)*2.4; if(y===Y0)ctx.moveTo(yx(y),yy); else ctx.lineTo(yx(y),yy); }
+    ctx.stroke();
+    // axis
+    ctx.strokeStyle="rgba(233,226,210,.2)"; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(40,AX); ctx.lineTo(W-30,AX); ctx.stroke();
+    ctx.fillStyle="rgba(233,226,210,.4)"; ctx.font="10px 'IBM Plex Mono',monospace";
+    for(var tk=1900;tk<=2020;tk+=20){ var x=yx(tk); ctx.fillRect(x,AX-3,1,6); ctx.fillText(tk, x-12, AX+16); }
+    // find markers + surfacing fragments
+    FINDS.forEach(function(f){ var x=yx(f.yr), reached=year>=f.yr;
+      ctx.strokeStyle=f.base?"rgba(233,226,210,.25)":(f.clean?"rgba(115,179,163,.6)":"rgba(224,122,84,.7)"); ctx.setLineDash([3,4]);
+      ctx.beginPath(); ctx.moveTo(x,60); ctx.lineTo(x,AX); ctx.stroke(); ctx.setLineDash([]);
+      if(!f.base && reached){ // a papyrus fragment risen into view
+        var ry=Math.max(78, AX-amountAt(f.yr)*2.4-46+Math.sin(t)*2);
+        ctx.save(); ctx.translate(x, ry); ctx.rotate(f.clean?-0.05:0.06);
+        var col=f.clean?"#c3b48c":"#b6a67c"; ctx.fillStyle=col;
+        ctx.fillRect(-34,-20,68,40);
+        ctx.strokeStyle="rgba(60,40,30,.4)"; for(var li=-12;li<=12;li+=6){ ctx.beginPath(); ctx.moveTo(-30,li); ctx.lineTo(30,li); ctx.stroke(); }
+        // torn right edge
+        ctx.fillStyle="rgba(20,12,26,.5)"; ctx.beginPath(); ctx.moveTo(34,-20); ctx.lineTo(26,-8); ctx.lineTo(34,4); ctx.lineTo(24,20); ctx.lineTo(34,20); ctx.closePath(); ctx.fill();
+        ctx.restore();
+        ctx.fillStyle=f.clean?"#73b3a3":"#e07a54"; ctx.font="10px 'IBM Plex Mono',monospace"; ctx.textAlign="center";
+        ctx.fillText(f.yr, x, ry-28); ctx.textAlign="left";
+      } else if(!f.base){ ctx.fillStyle="rgba(233,226,210,.25)"; ctx.font="10px 'IBM Plex Mono',monospace"; ctx.textAlign="center"; ctx.fillText(f.yr, x, 74); ctx.textAlign="left"; }
+    });
+    // the scrubber
+    var sx=yx(year); ctx.strokeStyle="#d9a441"; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(sx,54); ctx.lineTo(sx,AX); ctx.stroke();
+    ctx.fillStyle="#d9a441"; ctx.beginPath(); ctx.moveTo(sx,50); ctx.lineTo(sx-5,42); ctx.lineTo(sx+5,42); ctx.closePath(); ctx.fill();
+    // status
+    ctx.fillStyle="rgba(233,226,210,.75)"; ctx.font="12px 'IBM Plex Mono',monospace";
+    var have = year>=2014 ? "we have the Old Age poem + the Brothers + Kypris" : year>=2004 ? "we have the Old Age poem (2004)" : "the modern papyrus era — the scraps of Oxyrhynchus";
+    ctx.fillText("as of "+year+": "+have, 40, H-8);
+    requestAnimationFrame(draw);
+  }
+
+  function showPoem(){ var p=POEMS[CHIPS[cur]], box=document.getElementById("poem");
+    box.innerHTML = "<div class='yr"+(p.clean?"":" flag")+"'>"+p.name+" · recovered "+p.yr+(p.clean?" · clean provenance":" · ⚠ provenance disgraced")+"</div>"+
+      "<div class='en'>“"+p.en+"”</div><div class='prov'>"+p.prov+"</div>";
+  }
+  var chips=document.getElementById("chips");
+  CHIPS.forEach(function(k,i){ var c=document.createElement("span"); c.className="chip"+(i===0?" on":""); c.textContent=POEMS[k].name.split("·")[0].trim();
+    c.onclick=function(){ cur=i; chips.querySelectorAll(".chip").forEach(function(x){x.classList.remove("on");}); c.classList.add("on"); showPoem();
+      var py=POEMS[k].yr; year=Math.max(year,py); document.getElementById("yRange").value=year; document.getElementById("yVal").textContent=year; };
+    chips.appendChild(c); });
+  var yR=document.getElementById("yRange");
+  yR.oninput=function(){ year=+this.value; document.getElementById("yVal").textContent=year; };
+  cv.addEventListener("pointerdown",scrub); cv.addEventListener("pointermove",function(e){ if(e.buttons)scrub(e); });
+  function scrub(e){ var r=cv.getBoundingClientRect(), mx=(e.clientX-r.left)/r.width*W; var y=Math.round(Y0+(mx-40)/(W-70)*(Y1-Y0)); year=Math.max(Y0,Math.min(Y1,y)); yR.value=year; document.getElementById("yVal").textContent=year; }
+
+  showPoem(); draw();   // draw() paints frame 1 immediately, then animates
+})();
+</script>
+</body>
+</html>
